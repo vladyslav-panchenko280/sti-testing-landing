@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  src: url("../font/Inter/Inter-Medium.woff2") format("woff2"),
+  url("../font/Inter/Inter-Medium.woff") format("woff"),
+  url("../font/Inter/Inter-Medium.eot") format("eot"),
+  url("../font/Inter/Inter-Medium.ttf") format("ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../font/Inter/Inter-Regular.woff2") format("woff2"),
+  url("../font/Inter/Inter-Regular.woff") format("woff"),
+  url("../font/Inter/Inter-Regular.eot") format("eot"),
+  url("../font/Inter/Inter-Regular.ttf") format("ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  src: url("../font/Inter/Inter-SemiBold.woff2") format("woff2"),
+  url("../font/Inter/Inter-SemiBold.woff") format("woff"),
+  url("../font/Inter/Inter-SemiBold.eot") format("eot"),
+  url("../font/Inter/Inter-SemiBold.ttf") format("ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family:'Inter', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  src: url("../font/Inter/Inter-Bold.woff2") format("woff2"),
+  url("../font/Inter/Inter-Bold.woff") format("woff"),
+  url("../font/Inter/Inter-Bold.eot") format("eot"),
+  url("../font/Inter/Inter-Bold.ttf") format("ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-style: italic;
+  src: url("../font/PlayfairDisplay/PlayfairDisplay-Italic.woff2") format("woff2"),
+  url("../font/PlayfairDisplay/PlayfairDisplay-Italic.woff") format("woff"),
+  url("../font/PlayfairDisplay/PlayfairDisplay-Italic.eot") format("eot"),
+  url("../font/PlayfairDisplay/PlayfairDisplay-Italic.ttf") format("ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-style: italic;
+  src: url("../font/PlayfairDisplay/PlayfairDisplay-BoldItalic.woff2") format("woff2"),
+  url("../font/PlayfairDisplay/PlayfairDisplay-BoldItalic.woff") format("woff"),
+  url("../font/PlayfairDisplay/PlayfairDisplay-BoldItalic.eot") format("eot"),
+  url("../font/PlayfairDisplay/PlayfairDisplay-BoldItalic.ttf") format("ttf");
+  font-display: swap;
+}

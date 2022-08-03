@@ -1,0 +1,14 @@
+//< General >===============================================================================================
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+body {
+	font-family: $mainFontFamily;
+  font-weight: 400;
+  height: 100vh;
+  width: $maxContentWidth;
+  overflow: hidden;
+}
+
+//< General >===============================================================================================
+

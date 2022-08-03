@@ -1,0 +1,29 @@
+//<VARIABLES>==========================================================================================================
+$breakpoint-sm: 320px;
+$breakpoint-xs: 425px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+$maxContentWidth : 1440px;
+$mainBackground: #FCFCF0;
+$mainRedx: #F87C56;
+$mainBlue: #307FE2;
+$babyBlue: #8ABADD;
+$salmon: #F5CABF;
+$mainOrangy: #F68D2E;
+$mainPinky: #ECB3CB;
+$complementaryDark: #2D2A26;
+$gradient: linear-gradient(90deg, #274CD6 0%, #CF63C6 49.91%, #80D7C4 100%);
+$secondaryGradient: linear-gradient(98.6deg, #D9CFFF 0%, #EBF1FF 44.29%, #DDE6EF 100%);
+
+$borderRadius: 10px;
+$mainBorder: 1px solid $complementaryDark;
+//</VARIABLES>===========================================================================================================
+
+//<DEFAULT FONT>==========================================================================================
+
+$mainFontFamily: "Inter";
+$secondaryFontFamily: "Playfair Display";
+
+//</DEFAULT FONT>==========================================================================================
