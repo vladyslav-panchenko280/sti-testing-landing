@@ -1,6 +1,7 @@
 .btnContainer {
      @include buildSize(130px, 55px);
      position: relative;
+     z-index: 1;
 
      &::before {
           content: '';
@@ -29,8 +30,16 @@
           transform: translate(2px, 2px);
      }
 
+     &:focus {
+          transform: translate(2px, 2px);
+     }
+
      &--blue {
           background: $babyBlue;
+     }
+
+     &--red {
+          background: $mainRedx;
      }
 
 }
@@ -44,7 +53,7 @@
           background: $complementaryDark;
           @include buildSize(50px, 50px);
           bottom: 0;
-          right: -1px;
+          right: 0;
           position: absolute;
           z-index: -1;
           border-radius: 10px;
@@ -62,8 +71,33 @@
      &:hover {
           transform: translate(2px, 2px);
      }
+
+     &:focus {
+          transform: translate(2px, 2px);
+     }
 }
 
 .btnMargin {
      margin: 0 20px;
+}
+
+.bigBtnContainer {
+     @include buildSize(160px, 55px);
+     position: relative;
+     z-index: 1;
+
+     &::before {
+          content: '';
+          background: $complementaryDark;
+          @include buildSize(155px, 50px);
+          bottom: 0;
+          right: -6px;
+          position: absolute;
+          z-index: -1;
+          border-radius: 10px;
+     }
+}
+
+.bigBtn {
+     width: 155px;
 }
