@@ -1,6 +1,5 @@
 .btnContainer {
      @include buildSize(130px, 55px);
-     margin: 0 20px;
      position: relative;
 
      &::before {
@@ -28,6 +27,10 @@
 
      &:hover {
           transform: translate(2px, 2px);
+     }
+
+     &--blue {
+          background: $babyBlue;
      }
 
 }
@@ -59,4 +62,8 @@
      &:hover {
           transform: translate(2px, 2px);
      }
+}
+
+.btnMargin {
+     margin: 0 20px;
 }

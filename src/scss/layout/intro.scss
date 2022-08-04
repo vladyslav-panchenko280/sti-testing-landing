@@ -1,0 +1,41 @@
+.intro {
+     background: linear-gradient(180deg, #DEDDE2 0%, #E3E6ED 44.29%, #DDE6EF 100%);;
+     @include buildSize(100%, 100vh);
+     @include flexAlign(flex, flex-end, center);
+     
+     &__container {
+          @include buildSize($maxContentWidth+40, calc(100% - $headerHeight));
+          @include flexAlign(flex, center, space-between);
+          padding: 0 20px;
+     }
+
+     &__content {
+          z-index: 2;
+     }
+
+     &__text {
+          @include buildFont(Inter, 68px, 700, $complementaryDark);
+          width: 45%;
+          letter-spacing: -3px;
+          line-height: 95%;
+          margin-bottom: 40px;
+     }
+
+     &__span {
+          font-family: 'Fairplay Display';
+          font-style: italic;
+
+          &--blue {
+               color: $mainBlue;
+          }
+
+          &--red {
+               color: $mainRedx;
+          }
+     }
+
+     &__photo {
+          position: absolute;
+          right: 0;
+     }
+}
