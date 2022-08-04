@@ -1,0 +1,58 @@
+.header {
+     @include buildSize(100%, $headerHeight);
+     @include flexAlign(flex, center, center);
+     flex-direction: column;
+     background: $mainBackground;
+     position: fixed;
+
+     &__runningline {
+          background: $gradient;
+          @include buildSize(100%, $runninglineHeight);
+          @include flexAlign(flex, center, center);
+          @include buildFont(Inter, 12px, 700, $complementaryDark);
+          display: flex;
+
+          & > picture {
+               padding: 0 10px;
+               display: flex;
+          }
+     }
+
+     &__container {
+          @include flexAlign(flex, center, space-between);
+          @include buildSize($maxContentWidth, calc($headerHeight - $runninglineHeight));
+     }
+
+     &__navigation {
+          height: inherit
+     }
+
+     &__links {
+          @include flexAlign(flex, center, start);
+          height: inherit;
+
+          &>li {
+               @include buildFont(Inter, 14px, 600, $complementaryDark);
+               padding: 0 10px;
+               height: 100%;
+               transition: $standartTransition;
+               cursor: pointer;
+
+               &:hover {
+                    margin-bottom: 5px;
+               }
+
+               &>a {
+                    height: inherit;
+                    @include flexAlign(flex, center, center);
+                    color: $complementaryDark;
+                    text-decoration: none;
+               }
+          }
+     }
+
+     &__buttonsContainer {
+          height: 100%;
+          @include flexAlign(flex, center, center);
+     }
+}
