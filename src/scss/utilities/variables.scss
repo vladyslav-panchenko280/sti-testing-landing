@@ -5,7 +5,8 @@ $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 
-$maxContentWidth : 1440px;
+$maxContentWidth : 1200px;
+
 $mainBackground: #FCFCF0;
 $mainRedx: #F87C56;
 $mainBlue: #307FE2;
@@ -17,8 +18,14 @@ $complementaryDark: #2D2A26;
 $gradient: linear-gradient(90deg, #274CD6 0%, #CF63C6 49.91%, #80D7C4 100%);
 $secondaryGradient: linear-gradient(98.6deg, #D9CFFF 0%, #EBF1FF 44.29%, #DDE6EF 100%);
 
+$runninglineHeight: 36px;
+$headerHeight: 118px;
+
 $borderRadius: 10px;
 $mainBorder: 1px solid $complementaryDark;
+
+$standartTransition: 0.3s;
+
 //</VARIABLES>===========================================================================================================
 
 //<DEFAULT FONT>==========================================================================================

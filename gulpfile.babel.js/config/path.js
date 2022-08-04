@@ -7,7 +7,7 @@ export default {
   html: {
     src: pathSrc + "/html/*.html",
     watch: pathSrc + "/html/**/*.html",
-    dest: pathDest
+    dest: pathDest + "/html"
   },
 
   css: {
@@ -29,7 +29,7 @@ export default {
   },
 
   img: {
-    src: pathSrc + "/img/*.{png,jpg,jpeg,gif,svg,ico}",
+    src: pathSrc + "/img/**/*.{png,jpg,jpeg,gif,svg,ico}",
     watch: pathSrc + "/img/**/*.{png,jpg,jpeg,gif,svg,ico}",
     dest: pathDest + "/img"
   },

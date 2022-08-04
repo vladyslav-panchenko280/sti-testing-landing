@@ -1,5 +1,7 @@
-@import "base/reset", "base/fonts", "base/elements.scss";
+@import "base/reset", "base/fonts";
 
 @import "utilities/variables", "utilities/mixins";
 
-@import "layout/body", "layout/runningLine.scss", "layout/header.scss", "layout/intro.scss", "layout/partners.scss", "layout/ourMission.scss", "layout/stepByStep.scss", "layout/joinWaitlist.scss", "layout/boxes.scss", "layout/socials.scss", "layout/footer.scss";
+@import "ui/buttons.scss", "ui/inputs.scss";
+
+@import "layout/body", "layout/header.scss", "layout/intro.scss", "layout/partners.scss", "layout/ourMission.scss", "layout/stepByStep.scss", "layout/joinWaitlist.scss", "layout/boxes.scss", "layout/socials.scss", "layout/footer.scss";

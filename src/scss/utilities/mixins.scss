@@ -4,10 +4,12 @@
   justify-content: $justifyContent;
 }
 
-@mixin buildFont($fontSize, $fontWeight, $fontColor) {
+@mixin buildFont($fontFamily: Inter, $fontSize: 14, $fontWeight: 400, $fontColor: $complementaryDark, $fontStyle: normal) {
+  font-family: $fontFamily;
   font-size: $fontSize;
   font-weight: $fontWeight;
   color: $fontColor;
+  font-style: $fontStyle;
 }
 
 @mixin buildSize($width, $height) {
@@ -22,3 +24,4 @@
   left: $left;
   right: $right;
 }
+
