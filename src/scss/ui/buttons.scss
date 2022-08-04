@@ -42,6 +42,10 @@
           background: $mainRedx;
      }
 
+     &--pink {
+          background: $mainPinky;
+     }
+
 }
 
 .loginBtnContainer {
@@ -92,6 +96,24 @@
           @include buildSize(155px, 50px);
           bottom: 0;
           right: -6px;
+          position: absolute;
+          z-index: -1;
+          border-radius: 10px;
+     }
+}
+
+.bigBtnWhiteContainer {
+     @include buildSize(160px, 55px);
+     position: relative;
+     z-index: 1;
+
+     &::before {
+          content: '';
+          background: #fff;
+          border: $mainBorder;
+          @include buildSize(155px, 50px);
+          bottom: 0;
+          right: -3px;
           position: absolute;
           z-index: -1;
           border-radius: 10px;
