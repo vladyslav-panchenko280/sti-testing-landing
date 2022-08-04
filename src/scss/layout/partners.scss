@@ -1,0 +1,30 @@
+.partners {
+     @include buildSize(100%, 100%);
+     @include flexAlign(flex, center,center);
+     min-height: 110px;
+     background: $mainBackground;
+
+     &__container {
+          @include buildSize($maxContentWidth + 40, 100%);
+          @include flexAlign(flex, center, space-between);
+          padding: 0 20px;
+     }
+
+     &__logos {
+          @include flexAlign(flex, center, space-between);
+          @include buildSize(100%, 100%);
+          margin-right: 5%;
+          gap: 10px;
+          flex-wrap: wrap;
+
+          & > li {
+               height: inherit;
+               @include flexAlign(flex, center, center);
+
+               & > a {
+                    height: inherit;
+                    @include flexAlign(flex, center, center);
+               }
+          }
+     }
+}
