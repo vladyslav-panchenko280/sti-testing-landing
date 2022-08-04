@@ -7,7 +7,7 @@ export default {
   html: {
     src: pathSrc + "/html/*.html",
     watch: pathSrc + "/html/**/*.html",
-    dest: pathDest + "/html"
+    dest: pathDest
   },
 
   css: {

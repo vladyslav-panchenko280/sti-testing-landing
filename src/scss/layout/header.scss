@@ -4,6 +4,8 @@
      flex-direction: column;
      background: $mainBackground;
      position: fixed;
+     border-bottom: $mainBorder;
+     z-index: 100;
 
      &__runningline {
           background: $gradient;
@@ -20,7 +22,9 @@
 
      &__container {
           @include flexAlign(flex, center, space-between);
-          @include buildSize($maxContentWidth, calc($headerHeight - $runninglineHeight));
+          @include buildSize(100%, calc($headerHeight - $runninglineHeight));
+          max-width: calc($maxContentWidth + 40px);
+          padding: 0 20px;
      }
 
      &__navigation {
