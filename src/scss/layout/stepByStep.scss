@@ -1,0 +1,83 @@
+.stepByStep {
+     @include buildSize(100%, 100%);
+
+     &__steps {
+          @include buildSize(inherit, 590px);
+          & > li {
+               @include buildSize(inherit, 590px);
+               background: no-repeat center url("../../img/backgrounds/gradient-background.jpg");
+               background-size: cover;
+               border: $mainBorder;
+               display: flex;
+               flex-direction: column;
+          }
+     }
+
+     &__number {
+          @include buildFont(Inter, 16px, 600, $complementaryDark);
+          @include buildSize(160px, 55px);
+          @include flexAlign(flex, center, center);
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          background: #fff;
+          border-radius: 1px 1px 60px 60px;
+          border: 3px solid $complementaryDark;
+          border-top: none;
+     }
+
+     &__container {
+          @include buildSize(100%, 100%);
+          @include flexAlign(flex, center, space-between);
+          max-width: $maxContentWidth + 40px;
+          padding: 0 20px;
+          align-self: center;
+     }
+
+     &__content {
+          width: 40%;
+     }
+
+     &__title {
+          @include buildFont(Inter, 48px, 700, #ffffff);
+          z-index: 2;
+          line-height: 105%;
+          letter-spacing: -3px;
+          margin-bottom: 20px;
+          width: 90%;
+     }
+
+     &__span {
+          font-family: "Fairplay Display";
+          font-style: italic;
+
+          &--salmon {
+               color: $salmon;
+          }
+
+          &--red {
+               color: $mainRedx;
+          }
+
+          &--blue {
+               color: $babyBlue
+          }
+     }
+
+     &__text {
+          @include buildFont(Inter, 18px, 400, #ffffff);
+          margin-bottom: 30px;
+          line-height: 150%;
+          letter-spacing: -0.01em;
+     }
+
+     &__illustation {
+          height: 100%;
+     }
+
+     &__armAndBox {
+          height: 100%;
+     }
+
+}
