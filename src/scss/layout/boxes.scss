@@ -1,0 +1,63 @@
+.boxes {
+     @include buildSize(100%, 100%);
+     @include flexAlign(flex, center,center);
+
+     &__commingSoon {
+          @include buildFont(Inter, 16px, 700, $complementaryDark);
+          @include buildSize(190px, 55px);
+          @include flexAlign(flex, center, center);
+          position: absolute;
+          left: 0;
+          right: 0;
+          top:0;
+          margin: 0 auto;
+          background: #fff;
+          border-radius: 1px 1px 60px 60px;
+          border: 3px solid $complementaryDark;
+          border-top: none;
+
+          &--orange {
+               background: $mainOrangy;
+          }
+
+          &--pink {
+               background: $mainPinky;
+          }
+
+          &--blue {
+               background: $babyBlue;
+          }
+     }
+
+     &__list {
+          @include buildSize(inherit, inherit);
+          @include flexAlign(grid, center,center);
+          grid-template-columns: repeat(2, 1fr);
+
+          & > li {
+               @include buildSize(100%, 600px);
+               position: relative;
+               @include flexAlign(flex, center, center);
+               flex-direction: column;
+               background: $mainBackground;
+               border: $mainBorder;
+          }
+     }
+
+     &__text {
+          width: 50%;
+          text-align: center;
+          margin-bottom: 40px;
+          @include buildFont(Inter, 14px, 500, $complementaryDark);
+     }
+
+     &__title {
+          margin-bottom: 20px;
+          letter-spacing: -3px;
+          @include buildFont(Inter, 48px, 700, $complementaryDark);
+     }
+
+     &__boxIllustration {
+          position: relative;
+     }
+}

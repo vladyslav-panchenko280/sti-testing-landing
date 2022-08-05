@@ -2,7 +2,7 @@
      @include buildSize(100%, 100%);
 
      &__steps {
-          @include buildSize(inherit, 590px);
+          @include buildSize(inherit, inherit);
           & > li {
                @include buildSize(inherit, 590px);
                background: no-repeat center url("../../img/backgrounds/gradient-background.jpg");
@@ -66,7 +66,7 @@
      }
 
      &__text {
-          @include buildFont(Inter, 18px, 400, #ffffff);
+          @include buildFont(Inter, 18px, 500, #ffffff);
           margin-bottom: 30px;
           line-height: 150%;
           letter-spacing: -0.01em;
