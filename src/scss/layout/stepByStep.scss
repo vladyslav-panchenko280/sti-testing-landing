@@ -14,7 +14,7 @@
      }
 
      &__number {
-          @include buildFont(Inter, 16px, 600, $complementaryDark);
+          @include buildFont($mainFontFamily, 16px, 600, $complementaryDark);
           @include buildSize(160px, 55px);
           @include flexAlign(flex, center, center);
           position: absolute;
@@ -40,7 +40,7 @@
      }
 
      &__title {
-          @include buildFont(Inter, 48px, 700, #ffffff);
+          @include buildFont($mainFontFamily, 48px, 700, #ffffff);
           z-index: 2;
           line-height: 105%;
           letter-spacing: -3px;
@@ -49,7 +49,7 @@
      }
 
      &__span {
-          font-family: "Fairplay Display";
+          font-family: $secondaryFontFamily;
           font-style: italic;
 
           &--salmon {
@@ -66,7 +66,7 @@
      }
 
      &__text {
-          @include buildFont(Inter, 18px, 500, #ffffff);
+          @include buildFont($mainFontFamily, 18px, 500, #ffffff);
           margin-bottom: 30px;
           line-height: 150%;
           letter-spacing: -0.01em;

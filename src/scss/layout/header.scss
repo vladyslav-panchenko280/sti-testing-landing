@@ -11,7 +11,7 @@
           background: $gradient;
           @include buildSize(100%, $runninglineHeight);
           @include flexAlign(flex, center, center);
-          @include buildFont(Inter, 12px, 700, $complementaryDark);
+          @include buildFont($mainFontFamily, 12px, 700, $complementaryDark);
           display: flex;
 
           & > picture {
@@ -36,7 +36,7 @@
           height: inherit;
 
           &>li {
-               @include buildFont(Inter, 14px, 600, $complementaryDark);
+               @include buildFont($mainFontFamily, 14px, 600, $complementaryDark);
                padding: 0 10px;
                height: 100%;
                transition: $standartTransition;

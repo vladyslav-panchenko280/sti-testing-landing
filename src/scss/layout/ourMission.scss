@@ -19,7 +19,7 @@
      }
 
      &__text {
-          @include buildFont(Inter, 48px, 700, #ffffff);
+          @include buildFont($mainFontFamily, 48px, 700, #ffffff);
           z-index: 2;
           line-height: 105%;
           letter-spacing: -3px;
@@ -28,7 +28,7 @@
      }
 
      &__span {
-          font-family: "Fairplay Display";
+          font-family: $secondaryFontFamily;
           font-style: italic;
 
           &--salmon {
@@ -45,7 +45,7 @@
      }
 
      &__subtext {
-          @include buildFont(Inter, 18px, 400, #ffffff);
+          @include buildFont($mainFontFamily, 18px, 400, #ffffff);
           margin-bottom: 30px;
           line-height: 150%;
           letter-spacing: -0.01em;
