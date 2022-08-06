@@ -7,19 +7,6 @@
      border-bottom: $mainBorder;
      z-index: 100;
 
-     &__runningline {
-          background: $gradient;
-          @include buildSize(100%, $runninglineHeight);
-          @include flexAlign(flex, center, center);
-          @include buildFont($mainFontFamily, 12px, 700, $complementaryDark);
-          display: flex;
-
-          & > picture {
-               padding: 0 10px;
-               display: flex;
-          }
-     }
-
      &__container {
           @include flexAlign(flex, center, space-between);
           @include buildSize(100%, calc($headerHeight - $runninglineHeight));
