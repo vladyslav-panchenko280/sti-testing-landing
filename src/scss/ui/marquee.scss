@@ -1,6 +1,6 @@
 .marquee {
      background: $gradient;
-     @include buildSize(1600px, $runninglineHeight);
+     @include buildSize(100%, $runninglineHeight);
      @include flexAlign(flex, center, center);
      @include buildFont($mainFontFamily, 12px, 700, $complementaryDark);
      display: flex;
