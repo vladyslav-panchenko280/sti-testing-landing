@@ -47,3 +47,10 @@
           @include flexAlign(flex, center, center);
      }
 }
+@media screen and (max-width: $breakpoint-lg) {
+     .header {
+          &__buttonsContainer {
+               margin-right: 10px;
+          }
+     }
+}

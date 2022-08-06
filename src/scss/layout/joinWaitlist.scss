@@ -39,3 +39,17 @@
      }
 
 }
+
+@media screen and (max-width: $breakpoint-lg) {
+     .joinWaitlist {
+          &__title {
+               font-size: 28px;
+          }
+
+          &__stickers {
+               &>picture>img {
+                    width: 100%;
+               }
+          }
+     }
+}
