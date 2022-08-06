@@ -12,8 +12,10 @@
 
 <body>
     <header class="header" title="Header">
-        <div class="header__runningline" title="Running line">
-
+        <div class="marquee" title="Marquee">
+            <p class="marquee__text">
+                <span>We ship inside the US only</span><span>We ship inside the US only</span><span>We ship inside the US only</span><span>We ship inside the US only</span><span>We ship inside the US only</span><span>We ship inside the US only</span><span>We ship inside the US only</span>
+            </p>
         </div>
         <div class="header__container">
             <nav class="header__navigation" title="Navigation">
@@ -196,13 +198,17 @@
         <section class="socials" title="Socials">
             <a href="index.html" class="socials__linksBlock" title="Link to spotify">
                 <div class="socials__spotify">
-                 <div class="socials__illustration" title="Illustration">
-                        <img src="../img/illustrations/girl-and-boy-on-banana.png" alt="Girl and boy on banana">
-                        <img src="../img/illustrations/spotify-sticker.png" alt="Spotify sticker">
-                    </div>
-                    <div class="socials__content">
-                        <h4 class="socials__spotifyText">Better Safe than Horny</h4>
-                        <span class="socials__span">With Carly and Josh</span>
+                    <div class="socials__spotifyContainer">`
+                        <div class="socials__illustration" title="Illustration">
+                            <img src="../img/illustrations/girl-and-boy-on-banana.png" alt="Girl and boy on banana">
+                        </div>
+                        <div class="socials__spotifySticker" title="Sticker">
+                            <img src="../img/illustrations/spotify-sticker.png" alt="Spotify sticker">
+                        </div>
+                        <div class="socials__content">
+                            <h4 class="socials__spotifyText">Better Safe than Horny</h4>
+                            <span class="socials__span">With Carly and Josh</span>
+                        </div>
                     </div>
                 </div>
             </a>
@@ -218,6 +224,36 @@
 
         </section>
     </main>
+
+    <footer class="footer" title="Footer">
+        <div class="footer__container"> 
+            <div class="footer__linksContainer">
+                <ul class="footer__links">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">How it works</a></li>
+                    <li><a href="index.html">Blog</a></li>
+                    <li><a href="index.html">Contacts</a></li>
+                </ul>
+                <ul class="footer__links">
+                    <li><a href="index.html">Privacy Policy</a></li>
+                    <li><a href="index.html">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer__discoverKits">
+                <h4 class="footer__ctaText">Discover our Kits</h4>
+                <div class="bigBtnWhiteContainer">
+                    <button class="btn bigBtn btn--blue" title="Get started">Get a Kit &#x1f4e6;</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom"> 
+            <p class="footer__socials"><a href="index.html" title="Link to podcast">Podcast</a>   /   <a href="index.html" title="Link to tiktok">TikTok</a>    /    <a href="index.html" title="Link to instagram">Instagram</a></p>
+            <span class="footer__span">&copy; 2021 Copyright,  All rights reserved</span>
+            <div class="inputWithButtonSmall">
+                <input type="text" title="Text input"><input type="submit" value="Subscrise" title="Submit button">
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -2,6 +2,11 @@
      @include flexAlign(flex, center,center);
      @include buildSize(100%, 750px);
 
+     &__spotifyContainer {
+          padding: 0 20px;
+
+     }
+
      &__spotify {
           @include flexAlign(flex, center, center);
           background: $mainBackground;
@@ -12,15 +17,9 @@
      }
 
      &__illustration {
-          margin-bottom: 40px;
-          margin-top: 20px;
-          position: relative;
-          display: flex;
-          flex-direction: column;
 
-          & > img {
+          & > picture > img {
                @include buildSize(100%, 100%);
-               object-fit: cover
           }
      }
 
@@ -50,9 +49,14 @@
           margin-top: 40px;
      }
 
+     &__spotifySticker {
+          margin-bottom: 40px;
+     }
+
+
      &__spotifyText {
           @include buildFont($mainFontFamily, 70px, 700, $complementaryDark);
-          width: 50%;
+          width: 350px;
           line-height: 95%;
           letter-spacing: -3px;
           margin-bottom: 20px;

@@ -1,0 +1,68 @@
+.footer {
+     @include buildSize(100%, 430px);
+     @include flexAlign(flex, center, center);
+     flex-direction: column;
+     background: $complementaryDark;
+
+     &__container {
+          @include buildSize(inherit, 100%);
+          @include flexAlign(flex, center, center);
+          max-width: $maxContentWidth + 40px;
+          padding: 0 20px;
+          
+     }
+
+     &__linksContainer {
+          @include buildSize(inherit, inherit);
+          @include flexAlign(flex, center, end);
+     }
+
+     &__links {
+          display: flex;
+           align-items: start;
+          justify-content: start;
+          flex-direction: column;
+          height: 225px;
+          margin: 0 40px;
+          & > li {
+               margin: 15px 0;
+               @include buildFont($mainFontFamily, 16px, 600, #fff);
+               & > a {
+                    text-decoration: none;
+                    color: #fff;
+               }
+          }
+     }
+
+     &__discoverKits {
+          @include buildSize(inherit, inherit);
+          @include flexAlign(flex, center, center);
+          flex-direction: column;
+     }
+
+     &__ctaText {
+          @include buildFont($mainFontFamily, 22px , 700, #fff);
+          margin-bottom: 20px;
+     }
+
+     &__bottom {
+          @include buildSize(inherit, 130px);
+          @include flexAlign(flex, center, space-between);
+          max-width: $maxContentWidth + 40px;
+          padding: 0 20px;
+          border-top: 1px solid #524C45;
+     }
+
+     &__socials {
+          @include buildFont($mainFontFamily, 16px, 600, #fff);
+          & > a {
+               text-decoration: none;
+               color: #fff;
+               margin: 0 5px;
+          }
+     }
+
+     &__span {
+          @include buildFont($mainFontFamily, 16px, 500, #6F6A63);
+     }
+}
