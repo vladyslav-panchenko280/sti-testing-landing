@@ -17,7 +17,7 @@
 }
 
 .btn {
-     @include buildFont(Inter, 14px, 600, $complementaryDark);
+     @include buildFont($mainFontFamily, 14px, 600, $complementaryDark);
      @include buildSize(125px, 50px);
      border-radius: 10px;
      border: $mainBorder;

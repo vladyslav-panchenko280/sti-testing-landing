@@ -3,7 +3,7 @@
      @include flexAlign(flex, center,center);
 
      &__commingSoon {
-          @include buildFont(Inter, 16px, 700, $complementaryDark);
+          @include buildFont($mainFontFamily, 16px, 700, $complementaryDark);
           @include buildSize(190px, 55px);
           @include flexAlign(flex, center, center);
           position: absolute;
@@ -48,13 +48,13 @@
           width: 50%;
           text-align: center;
           margin-bottom: 40px;
-          @include buildFont(Inter, 14px, 500, $complementaryDark);
+          @include buildFont($mainFontFamily, 14px, 500, $complementaryDark);
      }
 
      &__title {
           margin-bottom: 20px;
           letter-spacing: -3px;
-          @include buildFont(Inter, 48px, 700, $complementaryDark);
+          @include buildFont($mainFontFamily, 48px, 700, $complementaryDark);
      }
 
      &__boxIllustration {

@@ -1,0 +1,38 @@
+.inputWithButtonContainer {
+     width: 100%;
+     @include flexAlign(flex, center, center);
+
+     & > input[type="text"] {
+          @include buildSize(300px, 60px);
+          @include buildFont($mainFontFamily, 18px, 500, $complementaryDark);
+          border: $mainBorder;
+          background: #fff;
+          border-radius: 10px 0 0 10px;
+          padding-left: 15px;
+          z-index: 2;
+
+          &:focus {
+               border-color: #3898ec;
+               outline: none;
+          }
+      }
+
+      & > input[type="submit"] {
+          @include buildSize(140px, 60px);
+          @include buildFont($mainFontFamily, 18px, 500, $complementaryDark);
+          border: $mainBorder;
+          z-index: 1;
+          background: $mainPinky;
+          border-radius: 0 10px 10px 0;
+
+          &:focus {
+               border-color: #f68d2e;
+               outline: none;
+          }
+
+          &:hover {
+               border-color: #f68d2e;
+               outline: none;
+          }
+      }
+}

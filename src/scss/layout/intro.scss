@@ -14,7 +14,7 @@
      }
 
      &__text {
-          @include buildFont(Inter, 68px, 700, $complementaryDark);
+          @include buildFont($mainFontFamily, 68px, 700, $complementaryDark);
           width: 45%;
           letter-spacing: -3px;
           line-height: 95%;
@@ -22,7 +22,7 @@
      }
 
      &__span {
-          font-family: 'Fairplay Display';
+          font-family: $secondaryFontFamily;
           font-style: italic;
 
           &--blue {
