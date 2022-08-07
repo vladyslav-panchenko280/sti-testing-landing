@@ -5,9 +5,11 @@
 body {
 	font-family: $mainFontFamily;
   font-weight: 400;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   width: 100%;
 } 
+
 
 //< General >===============================================================================================
 

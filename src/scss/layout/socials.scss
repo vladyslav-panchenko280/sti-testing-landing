@@ -77,3 +77,25 @@
           margin-bottom: 20px;
      }
 }
+
+@media screen and (max-width: $breakpoint-lg) {
+     .socials{
+          &__tiktokText {
+          font-size: 40px;
+          }
+          &__spotifyText {
+               font-size: 40px;
+               width: 60%;
+          }
+          &__iphone {
+               width: 80%;
+               &>picture>img {
+                    width: 100%;
+                    bottom: 20px;
+    position: absolute;
+               }
+          }
+     }
+}
+
+     

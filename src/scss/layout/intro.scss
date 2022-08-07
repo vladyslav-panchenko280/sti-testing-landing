@@ -1,8 +1,9 @@
 .intro {
-     background: linear-gradient(180deg, #DEDDE2 0%, #E3E6ED 44.29%, #DDE6EF 100%);;
+     background: linear-gradient(180deg, #DEDDE2 0%, #E3E6ED 44.29%, #DDE6EF 100%);
+     ;
      @include buildSize(100%, 100vh);
      @include flexAlign(flex, flex-end, center);
-     
+
      &__container {
           @include buildSize($maxContentWidth+40, calc(100% - $headerHeight));
           @include flexAlign(flex, center, space-between);
@@ -37,5 +38,21 @@
      &__photo {
           position: absolute;
           right: 0;
+     }
+}
+
+@media screen and (max-width: $breakpoint-lg) {
+     .intro {
+          height: 700px;
+
+          &__photo {
+               &>picture>img {
+                    width: 590px;
+               }
+          }
+
+          &__text {
+               font-size: 44px;
+          }
      }
 }
