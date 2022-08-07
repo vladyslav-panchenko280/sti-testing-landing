@@ -1,7 +1,6 @@
 .idea/
 *.iml
 node_modules
-public
 .DS_Store
 thumbs.db
 package-lock.json
