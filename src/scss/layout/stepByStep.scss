@@ -1,6 +1,6 @@
 .stepByStep {
      @include buildSize(100%, 100%);
-     background: no-repeat center url("../../img/backgrounds/gradient-background.jpg");
+     background: no-repeat center url("../img/backgrounds/gradient-background.jpg");
      background-size: cover;
 
 
@@ -9,7 +9,7 @@
 
           &>li {
                @include buildSize(inherit, 590px);
-               background: no-repeat center url("../../img/backgrounds/gradient-background.jpg");
+               background: no-repeat center url("../img/backgrounds/gradient-background.jpg");
                background-size: cover;
                border: $mainBorder;
                display: flex;

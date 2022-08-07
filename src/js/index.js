@@ -19,8 +19,6 @@ const footerSpan = document.querySelector('.footer__span');
 const footerLinksContainer = document.querySelector('.footer__linksContainer');
 const footerContainer = document.querySelector('.footer__container');
 
-console.log(footerLinksFirstPart);
-
 
 function toggleElementsHeader() {
      if (window.screen.width <= 580) {
@@ -87,11 +85,11 @@ function escapeKey(event) {
      event.preventDefault();
      if (event.key === 'Escape') {
           closeMobileMenu();
-          console.log('s')
      }
 }
 
 function openMobileMenu() {
+     modal.style.zIndex = '1000'
      document.body.style.overflow = 'hidden';
      mainArea.prepend(modal);
 
@@ -113,5 +111,4 @@ exitIcon.addEventListener('click', closeMobileMenu);
 
 window.addEventListener('resize', toggleElementsHeader);
 window.addEventListener('resize', toggleElementsFooter);
-
 
