@@ -1,0 +1,27 @@
+@mixin flexAlign($display, $alignItems: none, $justifyContent: none) {
+  display: $display;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+}
+
+@mixin buildFont($fontFamily: Inter, $fontSize: 14, $fontWeight: 400, $fontColor: $complementaryDark, $fontStyle: normal) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  color: $fontColor;
+  font-style: $fontStyle;
+}
+
+@mixin buildSize($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin positionAbsoluteParams($top: 0, $bottom: 0, $left: 0, $right: 0) {
+  position: absolute;
+  top: $top;
+  bottom: $bottom;
+  left: $left;
+  right: $right;
+}
+

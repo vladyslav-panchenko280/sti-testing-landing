@@ -1,0 +1,121 @@
+.socials {
+     @include flexAlign(flex, center,center);
+     @include buildSize(100%, 750px);
+
+     &__spotifyContainer {
+          padding: 0 20px;
+
+     }
+
+     &__spotify {
+          @include flexAlign(flex, center, center);
+          background: $mainBackground;
+          border: $mainBorder;
+          @include buildSize(inherit, inherit);
+          flex-direction: column;
+
+     }
+
+     &__illustration {
+
+          & > picture > img {
+               @include buildSize(100%, 100%);
+          }
+     }
+
+     &__tiktok {
+          @include flexAlign(flex, center, start);
+          @include buildSize(inherit, inherit);
+          background: center no-repeat url("../img/backgrounds/gradient-background-2.jpg");
+          background-size: cover;
+          border: $mainBorder;
+          position: relative;
+          flex-direction: column;
+          width: 100%;
+          gap: 30px;
+          overflow: hidden;
+     }
+
+     &__span {
+          @include buildFont($mainFontFamily, 22px, 500, $complementaryDark);
+     }
+
+     &__linksBlock {
+          @include buildSize(inherit, inherit);
+          text-decoration: none;
+     }
+
+     &__tiktokSticker {
+          margin-top: 40px;
+     }
+
+     &__spotifySticker {
+          margin-bottom: 40px;
+     }
+
+
+     &__spotifyText {
+          @include buildFont($mainFontFamily, 70px, 700, $complementaryDark);
+          width: 350px;
+          line-height: 95%;
+          letter-spacing: -3px;
+          margin-bottom: 20px;
+     }
+
+     &__tiktokText {
+          letter-spacing: -3px;
+          @include buildFont($mainFontFamily, 52px, 700, #fff);
+     }
+
+     &__iphone {
+          position: absolute;
+          bottom: -35px;
+     }
+     
+     
+     &__content {
+          margin-bottom: 20px;
+     }
+}
+
+@media screen and (max-width: $breakpoint-lg) {
+     .socials{
+          flex-direction: column;
+          height: 100%;
+          &__tiktokText {
+          font-size: 40px;
+          }
+          &__spotifyText {
+               font-size: 40px;
+               width: 60%;
+          }
+          &__iphone {
+               width: 80%;
+               position: relative;
+               &>picture>img {
+                    width: 100%;
+                    bottom: 20px;
+               }
+          }
+
+          &__spotifySticker {
+               width: 20%;
+               & > picture > img {
+                    width: 100%;
+               }
+          }
+
+          &__content {
+               margin-bottom: 40px;
+          }
+     }
+}
+
+@media screen and (max-width: $breakpoint-xs) {
+     .socials{
+
+          
+     }
+}
+
+     

@@ -1,0 +1,87 @@
+.inputWithButtonContainer {
+     width: 100%;
+     @include flexAlign(flex, center, center);
+
+     & > input[type="text"] {
+          @include buildSize(100%, 60px);
+          @include buildFont($mainFontFamily, 18px, 500, $complementaryDark);
+          max-width: 300px;
+          border: $mainBorder;
+          background: #fff;
+          border-radius: 10px 0 0 10px;
+          padding-left: 15px;
+          z-index: 2;
+
+          &:focus {
+               border-color: #3898ec;
+               outline: none;
+          }
+      }
+
+      & > input[type="submit"] {
+          @include buildSize(100%, 60px);
+          @include buildFont($mainFontFamily, 18px, 500, $complementaryDark);
+          max-width: 140px;
+          border: $mainBorder;
+          z-index: 1;
+          background: $mainPinky;
+          border-radius: 0 10px 10px 0;
+
+          &:focus {
+               border-color: #f68d2e;
+               outline: none;
+          }
+
+          &:hover {
+               border-color: #f68d2e;
+               outline: none;
+          }
+      }
+
+}
+
+.inputWithButtonSmall {
+     @include flexAlign(flex, center, center);
+
+     & > input[type="text"] {
+          @include buildSize(100%, 50px);
+          @include buildFont($mainFontFamily, 18px, 500, $complementaryDark);
+          max-width: 250px;
+          border: $mainBorder;
+          background: #fff;
+          border-radius: 10px 0 0 10px;
+          padding-left: 15px;
+          z-index: 2;
+
+          &:focus {
+               border-color: #3898ec;
+               outline: none;
+          }
+      }
+
+      & > input[type="submit"] {
+          @include buildSize(100%, 50px);
+          @include buildFont($mainFontFamily, 16px, 500, $complementaryDark);
+          width: 120px;
+          border: $mainBorder;
+          z-index: 1;
+          background: $mainPinky;
+          border-radius: 0 10px 10px 0;
+
+          &:focus {
+               border-color: #f68d2e;
+               outline: none;
+          }
+
+          &:hover {
+               border-color: #f68d2e;
+               outline: none;
+          }
+      }
+}
+
+@media screen and (max-width: $breakpoint-xs){
+     .inputWithButtonSmall {
+          margin: 40px 0;
+     }
+}

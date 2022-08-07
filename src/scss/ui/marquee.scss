@@ -1,0 +1,45 @@
+.marquee {
+     background: $gradient;
+     @include buildSize(100%, $runninglineHeight);
+     @include flexAlign(flex, center, center);
+     @include buildFont($mainFontFamily, 12px, 700, $complementaryDark);
+     display: flex;
+     position: relative;
+
+     &__text {
+          position: absolute;
+          white-space: nowrap;
+          overflow: hidden;
+          animation: marqueeOne 35s infinite linear;
+          width: 2000px;
+
+          &>span {
+               @include buildFont($mainFontFamily, 12px, 700, #fff);
+               margin: 0 35px;
+               position: relative;
+
+               &::before {
+                    content: "";
+                    background-image: url(../img/icons/🇺🇸.png);
+                    width: 18px;
+                    height: 13px;
+                    position: absolute;
+                    background-size: cover;
+                    left: -41px;
+                    bottom: 2px;
+                    background-position: center
+               }
+
+          }
+     }
+
+     @keyframes marqueeOne {
+          0% {
+               transform: translate(+100%, 0);
+          }
+
+          100% {
+               transform: translate(-100%, 0)
+          }
+     }
+}
