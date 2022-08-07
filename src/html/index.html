@@ -7,17 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Replace awkward lab visits with at-home STI testing and treatment." />
     <title>STI Testing</title>
-    <link rel="stylesheet" href="../css/index.min.css">
+    <link rel="stylesheet" href="./css/index.min.css">
 </head>
 
 <body>
     <header class="header">
         <div class="marquee">
             <p class="marquee__text">
-                <span>We ship inside the US only</span><span>We ship inside the US only</span><span>We ship inside the US only</span><span>We ship inside the US only</span><span>We ship inside the US only</span><span>We ship inside the US only</span><span>We ship inside the US only</span>
+                <span>We ship inside the US only</span><span>We ship inside the US only</span><span>We ship inside the US only</span><span>We ship inside the US only</span><span>We ship inside the US only</span><span>We ship inside the US only</span><span>We ship inside the US only</span><span>We ship inside the US only</span><span>We ship inside the US only</span><span>We ship inside the US only</span><span>We ship inside the US only</span>
             </p>
         </div>
         <div class="header__container">
+            <svg id="menuIcon" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="54" height="54" rx="10" fill="#F3F3E7"/>
+                <rect x="0.5" y="-0.5" width="25" height="1" rx="0.5" transform="matrix(1 0 0 -1 14 21)" fill="#2D2A26" stroke="#2D2A26"/>
+                <rect x="0.5" y="-0.5" width="25" height="1" rx="0.5" transform="matrix(1 0 0 -1 14 27)" fill="#2D2A26" stroke="#2D2A26"/>
+                <rect x="0.5" y="-0.5" width="25" height="1" rx="0.5" transform="matrix(1 0 0 -1 14 33)" fill="#2D2A26" stroke="#2D2A26"/>
+                </svg>
             <nav class="header__navigation">
                 <ul class="header__links">
                     <li><a href="index.html" accesskey="1">About</a></li>
@@ -30,14 +36,23 @@
                 <div class="btnContainer btnMargin">  <button class="btn">Get a Kit &#x1f4e6;</button>
                 </div>
                 <div class="loginBtnContainer">
-                    <button class="loginBtn"><img src="../img/icons/authentication.svg" alt="Log in icon"></button>
+                    <button class="loginBtn"><img src="./img/icons/authentication.svg" alt="Log in icon"></button>
                 </div>
             </div>
         </div>
     </header>
     <main class="main">
+        <div class="overlay" style="z-index: -10;">
+            <div class="menuMobile">
+                <div class="menuMobile__exitContainer">
+                    <div id="exitIcon">
+                        <img src="./img/icons/exit-icon.svg" alt="exit-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
         <section class="intro" role="banner">
-            <div class="intro__photo"><img src="../img/photos/young-man.jpg" alt="Young man"></div>
+            <div class="intro__photo"><img src="./img/photos/young-man.jpg" alt="Young man"></div>
             <div class="intro__container">
                 <div class="intro__content" aria-labelledby="intro">
                     <h1 id="intro" class="intro__text">Replace awkward lab visits with at-home <span
@@ -54,16 +69,16 @@
             <div class="partners__container">
                 <ul class="partners__logos">
                     <li><a href="index.html">
-                            <img src="../img/logos/blue-cross-blue-shield-vector-logo.svg" alt="Blue cross blue shield logo">
+                            <img src="./img/logos/blue-cross-blue-shield-vector-logo.svg" alt="Blue cross blue shield logo">
                         </a></li>
                     <li><a href="index.html">
-                            <img src="../img/logos/Cigna-vector-logo.svg" alt="Cigna logo">
+                            <img src="./img/logos/Cigna-vector-logo.svg" alt="Cigna logo">
                         </a></li>
                     <li><a href="index.html">
-                            <img src="../img/logos/unitedhealthcare-vector-logo.svg" alt="United health care logo"></a>
+                            <img src="./img/logos/unitedhealthcare-vector-logo.svg" alt="United health care logo"></a>
                     </li>
                     <li><a href="index.html">
-                            <img src="../img/logos/aetna-vector-logo.svg" alt="Aetna logo">
+                            <img src="./img/logos/aetna-vector-logo.svg" alt="Aetna logo">
                         </a></li>
                 </ul>
                 <div class="bigBtnContainer">
@@ -74,7 +89,7 @@
         <section class="ourMission" aria-labelledby="ourMission">
             <div class="ourMission__container">
                 <div class="ourMission__illustation">
-                    <img src="../img/illustrations/Woman-vector-illustation.svg" alt="Woman with box">
+                    <img src="./img/illustrations/Woman-vector-illustation.svg" alt="Woman with box">
                 </div>
                 <div class="ourMission__content">
                     <h2 class="ourMission__text" id="ourMission">Our mission is simple: to make healthcare <span class="ourMission__span ourMission__span--red">accessible</span>, <span class="ourMission__span ourMission__span--salmon">affordable</span>, and <span class="ourMission__span ourMission__span--blue">easy to use</span>.
@@ -88,7 +103,7 @@
         </section>
         <section class="stepByStep">
             <ol class="stepByStep__steps">
-                <li data-rellax-speed="1" data-rellax-percentage="0.2" >
+                <li class="sticky">
                     <span class="stepByStep__number">1/3</span>
                     <div class="stepByStep__container">
                         <div class="stepByStep__content">
@@ -96,15 +111,15 @@
                             <p class="stepByStep__text">Book a visit today and get in touch with a doctor through video. Our team will confirm you're in-network to make things easier. </p>
                         </div>
                         <div class="stepByStep__illustation">
-                            <img src="../img/illustrations/doctors-arm.png" alt="Doctors arm from notebook">
+                            <img src="./img/illustrations/doctors-arm.png" alt="Doctors arm from notebook">
                         </div>
                     </div>
                 </li>
-                <li  class="rellax" data-rellax-speed="8" data-rellax-percentage="0">
+                <li class="sticky">
                     <span class="stepByStep__number">2/3</span>
                     <div class="stepByStep__container">
                         <div class="stepByStep__illustation">
-                            <img class="stepByStep__armAndBox" src="../img/illustrations/box-and-arm.png" alt="Box and arm">
+                            <img class="stepByStep__armAndBox" src="./img/illustrations/box-and-arm.png" alt="Box and arm">
                         </div>
                         <div class="stepByStep__content">
                             <h3 class="stepByStep__title">Your kit <span class="stepByStep__span stepByStep__span--salmon">is mailed</span></h3>
@@ -115,7 +130,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="rellax" data-rellax-speed="14" data-rellax-percentage="-0.3">
+                <li class="sticky">
                     <span class="stepByStep__number">3/3</span>
                     <div class="stepByStep__container">
                         <div class="stepByStep__content">
@@ -126,7 +141,7 @@
                             </div>
                         </div>
                         <div class="stepByStep__illustation">
-                            <img src="../img/illustrations/phone-with-doctor.png" alt="Doctor with a phone">
+                            <img src="./img/illustrations/phone-with-doctor.png" alt="Doctor with a phone">
                         </div>
                     </div>
                 </li>
@@ -139,10 +154,10 @@
                     <h3 class="boxes__title">PrEP Check</h3>
                     <p class="boxes__text">HIV 1&2, Hep B & C,  Creatinine (kidney function), Syphilis, Chlamydia, Gonorrhoea. Required quarterly with medication</p>
                     <div class="boxes__boxIllustration">
-                        <img src="../img//illustrations/box-1.png" alt="Kit box">
-                        <img style="position: absolute; left: -60px; top: -25px;" src="../img/illustrations/urine-sticker.svg" alt="Urine">
-                        <img style="position: absolute; bottom: -80px; right: 20px;" src="../img/illustrations/swab-sticker.svg" alt="Swab">
-                        <img style="position: absolute; top: -10px;" src="../img/illustrations/blood-sticker.svg" alt="Blood">
+                        <img class="boxes__box" src="./img//illustrations/box-1.png" alt="Kit box">
+                        <img style="position: absolute; left: -60px; top: -25px;" src="./img/illustrations/urine-sticker.svg" alt="Urine">
+                        <img style="position: absolute; bottom: -80px; right: 20px;" src="./img/illustrations/swab-sticker.svg" alt="Swab">
+                        <img style="position: absolute; top: -10px;" src="./img/illustrations/blood-sticker.svg" alt="Blood">
                     </div>
                 </li>
                 <li>
@@ -150,10 +165,10 @@
                     <h3 class="boxes__title">Full Panel Kit</h3>
                     <p class="boxes__text">Hep B & C, Trich, Chlamydia, Gonorrhea, HIV, Syphillis, Gonadotropin, HSVII, HcG, and HPV</p>
                     <div class="boxes__boxIllustration">
-                        <img src="../img//illustrations/box-2.png" alt="Kit box">
-                        <img style="position: absolute; bottom: -60px; right: 125px;" src="../img/illustrations/urine-sticker.svg" alt="Urine">
-                        <img style="position: absolute; left: -100px; top: -25px;" src="../img/illustrations/swab-sticker.svg" alt="Swab">
-                        <img style="position: absolute; top: 100px;" src="../img/illustrations/blood-sticker.svg" alt="Blood">
+                        <img src="./img//illustrations/box-2.png" class="boxes__box" alt="Kit box">
+                        <img style="position: absolute; bottom: -60px; right: 125px;" src="./img/illustrations/urine-sticker.svg" alt="Urine">
+                        <img style="position: absolute; left: -100px; top: -25px;" src="./img/illustrations/swab-sticker.svg" alt="Swab">
+                        <img style="position: absolute; top: 100px;" src="./img/illustrations/blood-sticker.svg" alt="Blood">
                     </div>
                 </li>
                 <li>
@@ -161,8 +176,8 @@
                     <h3 class="boxes__title">Common Two</h3>
                     <p class="boxes__text">Chlamydia & Gonorrhoea</p>
                     <div class="boxes__boxIllustration">
-                        <img src="../img//illustrations/box-1.png" alt="Kit box">
-                        <img style="position: absolute; left: -50px; top: 100px;" src="../img/illustrations/blood-sticker.svg" alt="Blood">
+                        <img src="./img//illustrations/box-1.png" class="boxes__box" alt="Kit box">
+                        <img style="position: absolute; left: -50px; top: 100px;" src="./img/illustrations/blood-sticker.svg" alt="Blood">
                     </div>
                 </li>
                 <li>
@@ -170,9 +185,9 @@
                     <h3 class="boxes__title">HIV & others</h3>
                     <p class="boxes__text">HIV 1&2, Hep B, & Liver function</p>
                     <div class="boxes__boxIllustration">
-                        <img src="../img//illustrations/box-2.png" alt="Kit box">
-                        <img style="position: absolute; bottom: -60px; right: 125px;" src="../img/illustrations/urine-sticker.svg" alt="Urine">
-                        <img style="position: absolute; right: -80px; top: 45px;" src="../img/illustrations/swab-sticker.svg" alt="Swab">
+                        <img src="./img//illustrations/box-2.png" class="boxes__box" alt="Kit box">
+                        <img style="position: absolute; bottom: -60px; right: 125px;" src="./img/illustrations/urine-sticker.svg" alt="Urine">
+                        <img style="position: absolute; right: -80px; top: 45px;" src="./img/illustrations/swab-sticker.svg" alt="Swab">
                     </div>
                 </li>
             </ul>
@@ -180,9 +195,9 @@
         <section class="joinWaitlist" aria-labelledby="joinWaitlist">
             <div class="joinWaitlist__container">
                 <div class="joinWaitlist__stickers">
-                    <img src="../img/illustrations/heart-illustation.svg" alt="Heart">
-                    <img src="../img/illustrations/message-illustration.svg" alt="Message">
-                    <img src="../img/illustrations/like-big-finger-illustation.svg" alt="Big finger">
+                    <img src="./img/illustrations/heart-illustation.svg" alt="Heart">
+                    <img src="./img/illustrations/message-illustration.svg" alt="Message">
+                    <img src="./img/illustrations/like-big-finger-illustation.svg" alt="Big finger">
                 </div>
                 <h3 id="joinWaitlist" class="joinWaitlist__title">Join the Waitlist <br> 
                     <span class="joinWaitlist__span">Your partner will appreciate you.</span>
@@ -199,10 +214,10 @@
                 <div class="socials__spotify">
                     <div class="socials__spotifyContainer">`
                         <div class="socials__illustration">
-                            <img src="../img/illustrations/girl-and-boy-on-banana.png" alt="Girl and boy on banana">
+                            <img src="./img/illustrations/girl-and-boy-on-banana.png" alt="Girl and boy on banana">
                         </div>
                         <div class="socials__spotifySticker">
-                            <img src="../img/illustrations/spotify-sticker.png" alt="Spotify sticker">
+                            <img src="./img/illustrations/spotify-sticker.png" alt="Spotify sticker">
                         </div>
                         <div class="socials__content">
                             <h4 class="socials__spotifyText">Better Safe than Horny</h4>
@@ -213,10 +228,10 @@
             </a>
             <a href="index.html" class="socials__linksBlock">
                 <div class="socials__tiktok">
-                    <img class="socials__tiktokSticker" src="../img/illustrations/tiktok-sticker.svg" alt="Tiktok sticker">
+                    <img class="socials__tiktokSticker" src="./img/illustrations/tiktok-sticker.svg" alt="Tiktok sticker">
                     <h4 class="socials__tiktokText">Watch us on tiktok</h4>
                     <div class="socials__iphone">
-                        <img src="../img/illustrations/iphone-illustration.svg" alt="Iphone illustration">
+                        <img src="./img/illustrations/iphone-illustration.svg" alt="Iphone illustration">
                     </div>
                 </div>
                 </a>
@@ -227,13 +242,13 @@
     <footer class="footer" aria-label="footer">
         <div class="footer__container"> 
             <div class="footer__linksContainer">
-                <ul class="footer__links">
+                <ul class="footer__links" id="firstPartOfLinks">
                     <li><a href="index.html">About</a></li>
                     <li><a href="index.html">How it works</a></li>
                     <li><a href="index.html">Blog</a></li>
                     <li><a href="index.html">Contacts</a></li>
                 </ul>
-                <ul class="footer__links">
+                <ul class="footer__links" id="secondPartOfLinks">
                     <li><a href="index.html">Privacy Policy</a></li>
                     <li><a href="index.html">Terms and Conditions</a></li>
                 </ul>
@@ -248,12 +263,12 @@
         <div class="footer__bottom"> 
             <p class="footer__socials"><a href="index.html" >Podcast</a>   /   <a href="index.html" title="Link to tiktok">TikTok</a>    /    <a href="index.html" >Instagram</a></p>
             <span class="footer__span">&copy; 2021 Copyright,  All rights reserved</span>
-            <div class="inputWithButtonSmall">
+            <div class="inputWithButtonSmall" id="inputWithButtonSmall">
                 <input type="text"><input type="submit" value="Subscrise">
             </div>
         </div>
     </footer>
-<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+
     <script src="./js/main.js"></script>
 </body>
 

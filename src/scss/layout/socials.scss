@@ -26,7 +26,7 @@
      &__tiktok {
           @include flexAlign(flex, center, start);
           @include buildSize(inherit, inherit);
-          background: center no-repeat url("../../img/backgrounds/gradient-background-2.jpg");
+          background: center no-repeat url("../img/backgrounds/gradient-background-2.jpg");
           background-size: cover;
           border: $mainBorder;
           position: relative;
@@ -80,6 +80,8 @@
 
 @media screen and (max-width: $breakpoint-lg) {
      .socials{
+          flex-direction: column;
+          height: 100%;
           &__tiktokText {
           font-size: 40px;
           }
@@ -89,12 +91,30 @@
           }
           &__iphone {
                width: 80%;
+               position: relative;
                &>picture>img {
                     width: 100%;
                     bottom: 20px;
-    position: absolute;
                }
           }
+
+          &__spotifySticker {
+               width: 20%;
+               & > picture > img {
+                    width: 100%;
+               }
+          }
+
+          &__content {
+               margin-bottom: 40px;
+          }
+     }
+}
+
+@media screen and (max-width: $breakpoint-xs) {
+     .socials{
+
+          
      }
 }
 

@@ -66,3 +66,34 @@
           @include buildFont($mainFontFamily, 16px, 500, #6F6A63);
      }
 }
+
+@media screen and (max-width: $breakpoint-xs) {
+     .footer {
+          height: 400px;
+          &__bottom {
+               justify-content: center;
+               flex-direction: column;
+          }
+
+          &__links {
+               flex-direction: row;
+               height: auto;
+               column-gap: 35px;
+               margin-top: 20px;
+
+               &>li {
+                    white-space: nowrap;
+               }
+          }
+
+          &__container {
+               align-items: center;
+               flex-direction: column;
+               justify-content: flex-end;
+          }
+
+          &__span {
+               margin: 20px 0;
+          }
+     }
+}

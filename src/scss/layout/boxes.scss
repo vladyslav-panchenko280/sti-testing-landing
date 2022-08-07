@@ -40,6 +40,7 @@
                @include flexAlign(flex, center, center);
                flex-direction: column;
                background: $mainBackground;
+               overflow: hidden;
                border: $mainBorder;
           }
      }
@@ -73,6 +74,17 @@
 
           &__title {
                font-size: 36px;
+          }
+     }
+
+     
+}
+
+@media screen and (max-width: $breakpoint-xs) {
+     .boxes {
+
+          &__box {
+              width: 100%;
           }
      }
 

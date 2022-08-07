@@ -59,14 +59,15 @@
           bottom: 0;
           right: 0;
           position: absolute;
-          z-index: -1;
           border-radius: 10px;
+          z-index: -1;
      }
 }
 
 .loginBtn {
      @include buildSize(50px, 50px);
      border-radius: 10px;
+     z-index: 3;
      border: $mainBorder;
      background: #FCFCF0;
      transition: $standartTransition;
