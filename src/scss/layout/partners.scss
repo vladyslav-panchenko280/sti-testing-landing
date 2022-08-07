@@ -1,31 +1,48 @@
 .partners {
      @include buildSize(100%, 100%);
-     @include flexAlign(flex, center,center);
+     @include flexAlign(flex, center, center);
      min-height: 110px;
      background: $mainBackground;
 
      &__container {
           @include buildSize($maxContentWidth + 40, 100%);
           @include flexAlign(flex, center, space-between);
-          padding: 0 20px;
+          padding: 20px 20px;
      }
 
      &__logos {
           @include flexAlign(flex, center, space-between);
           @include buildSize(100%, 100%);
           margin-right: 5%;
-          gap: 10px;
+          gap: 0;
           flex-wrap: wrap;
 
-          & > li {
+          &>li {
                height: inherit;
+               width: 50%;
                @include flexAlign(flex, center, center);
 
-               & > a {
+               &>a {
+                    width: 50%;
                     height: inherit;
                     @include flexAlign(flex, center, center);
+                    &>picture>img {
+                         width: 100%;
+                    }
                }
           }
      }
 }
 
+@media screen and (max-width: $breakpoint-lg) {
+     .partners {
+          &__container {
+               flex-direction: column;
+               row-gap: 20px;
+          }
+
+          &__logos {
+               margin: 0;
+          }
+     }
+}

@@ -54,3 +54,24 @@
           }
      }
 }
+
+@media screen and (max-width:$breakpoint-xs) {
+     .header {
+          &__navigation {
+               height: auto;
+          }
+
+          &__links {
+               flex-direction: column;
+               width: 80%;
+               align-items: flex-start;
+               margin-bottom: 10px;
+
+               &>li {
+                    height: 40px;
+                    padding: 0;
+                    @include buildFont($mainFontFamily, 20px, 700, $complementaryDark);
+               }
+          }
+     }
+}

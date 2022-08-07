@@ -4,14 +4,14 @@
      @include flexAlign(flex, center, center);
      @include buildFont($mainFontFamily, 12px, 700, $complementaryDark);
      display: flex;
-     
+     position: relative;
 
      &__text {
-          position: relative;
+          position: absolute;
           white-space: nowrap;
           overflow: hidden;
           animation: marqueeOne 35s infinite linear;
-          width: inherit;
+          width: 2000px;
 
           &>span {
                @include buildFont($mainFontFamily, 12px, 700, #fff);

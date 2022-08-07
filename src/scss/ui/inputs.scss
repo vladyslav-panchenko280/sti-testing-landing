@@ -3,8 +3,9 @@
      @include flexAlign(flex, center, center);
 
      & > input[type="text"] {
-          @include buildSize(300px, 60px);
+          @include buildSize(100%, 60px);
           @include buildFont($mainFontFamily, 18px, 500, $complementaryDark);
+          max-width: 300px;
           border: $mainBorder;
           background: #fff;
           border-radius: 10px 0 0 10px;
@@ -18,8 +19,9 @@
       }
 
       & > input[type="submit"] {
-          @include buildSize(140px, 60px);
+          @include buildSize(100%, 60px);
           @include buildFont($mainFontFamily, 18px, 500, $complementaryDark);
+          max-width: 140px;
           border: $mainBorder;
           z-index: 1;
           background: $mainPinky;
@@ -76,4 +78,10 @@
                outline: none;
           }
       }
+}
+
+@media screen and (max-width: $breakpoint-xs){
+     .inputWithButtonSmall {
+          margin: 40px 0;
+     }
 }

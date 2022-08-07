@@ -56,3 +56,33 @@
           }
      }
 }
+
+@media screen and (max-width: $breakpoint-xs) {
+     .intro {
+          height: 1000px;
+
+          &__container {
+               align-items: flex-start;
+               justify-content: center;
+          }
+
+          &__content {
+               @include flexAlign(flex, center,center);
+               flex-direction: column;
+          }
+          &__photo {
+               &>picture>img {
+                    width: 70%px;
+               }
+          }
+
+          &__text {
+               font-size: 44px;
+               width: 70%;
+               text-align: center;
+               margin-top: 50px;
+          }
+     }
+
+
+}
