@@ -121,7 +121,7 @@
 
           &__steps {
                &>li {
-                    height: 100%;
+                    height: calc(100vh - $headerHeight);
                }
           }
 
@@ -139,7 +139,7 @@
                display: flex;
                align-items: center;
                width: 100%;
-               max-width: 150px;
+               max-width: 220px;
 
                &>picture>img {
                     width: 100%;
