@@ -12,7 +12,7 @@
   "bugs": {
     "url": "https://github.com/vladyslav-panchenko280/STITesting/issues"
   },
-  "homepage": "https://vladyslav-panchenko280.github.io/STITesting/?version=6be27d3",
+  "homepage": "https://vladyslav-panchenko280.github.io/STITesting/?version=299e4099649d6ff012b6eeb49677c8ae7449ca9e",
   "scripts": {
     "start": "gulp",
     "build": "gulp --production",
