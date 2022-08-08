@@ -851,7 +851,7 @@ body {
     height: 100%;
   }
   .stepByStep__steps > li {
-    height: 100%;
+    height: calc(100vh - 118px);
   }
   .stepByStep__container {
     flex-direction: column;
