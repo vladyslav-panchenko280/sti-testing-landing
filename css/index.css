@@ -873,6 +873,9 @@ body {
     width: 100%;
     max-width: 220px;
   }
+  .stepByStep__illustation--small {
+    max-width: 140px;
+  }
   .stepByStep__illustation > picture > img {
     width: 100%;
   }
@@ -1034,6 +1037,9 @@ body {
   }
   .boxes__text {
     width: 85%;
+  }
+  .boxes__boxIllustration {
+    width: 50%;
   }
 }
 .socials {
