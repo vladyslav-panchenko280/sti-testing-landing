@@ -1038,6 +1038,9 @@ body {
   .boxes__text {
     width: 85%;
   }
+  .boxes__boxIllustration {
+    width: 50%;
+  }
 }
 .socials {
   display: flex;
