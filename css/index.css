@@ -851,7 +851,7 @@ body {
     height: 100%;
   }
   .stepByStep__steps > li {
-    height: calc(100vh - 118px);
+    height: 100%;
   }
   .stepByStep__container {
     flex-direction: column;
@@ -864,7 +864,7 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 220px;
+    max-width: 150px;
   }
   .stepByStep__illustation > picture > img {
     width: 100%;
