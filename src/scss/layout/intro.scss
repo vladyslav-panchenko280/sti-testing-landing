@@ -47,7 +47,7 @@
 
           &__photo {
                &>picture>img {
-                    width: 590px;
+                    width: 540px;
                }
           }
 
@@ -71,7 +71,7 @@
                flex-direction: column;
           }
           &__photo {
-               width: 700px;
+               width: 100%;
                &>picture>img {
                     width: 100%;
                }

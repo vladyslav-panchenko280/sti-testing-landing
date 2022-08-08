@@ -19,13 +19,13 @@
 
           &>li {
                height: inherit;
-               width: 50%;
                @include flexAlign(flex, center, center);
 
                &>a {
-                    width: 50%;
+                    width: 100%;
                     height: inherit;
                     @include flexAlign(flex, center, center);
+
                     &>picture>img {
                          width: 100%;
                     }
@@ -43,6 +43,10 @@
 
           &__logos {
                margin: 0;
+
+               &>li {
+                    width: 50%;
+               }
           }
      }
 }
