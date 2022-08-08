@@ -1,6 +1,6 @@
 {
   "name": "stitesting",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Landing page",
   "main": "index.js",
   "repository": {
@@ -12,7 +12,7 @@
   "bugs": {
     "url": "https://github.com/vladyslav-panchenko280/STITesting/issues"
   },
-  "homepage": "https://vladyslav-panchenko280.github.io/STITesting/?version=c096745",
+  "homepage": "https://vladyslav-panchenko280.github.io/STITesting/?version=14f787865bc0c14d1638c590e6a034d18a6f5a0b",
   "scripts": {
     "start": "gulp",
     "build": "gulp --production",

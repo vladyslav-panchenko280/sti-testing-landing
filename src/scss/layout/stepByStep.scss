@@ -149,6 +149,10 @@
                width: 100%;
                max-width: 220px;
 
+               &--small {
+                    max-width: 140px;
+               }
+
                &>picture>img {
                     width: 100%;
                }
