@@ -853,9 +853,16 @@ body {
   .stepByStep__steps > li {
     height: 100%;
   }
+  .stepByStep__number {
+    width: 130px;
+    height: 40px;
+  }
   .stepByStep__container {
     flex-direction: column;
     padding: 60px 20px;
+  }
+  .stepByStep__container--small {
+    padding: 20px 20px;
   }
   .stepByStep__content {
     width: 85%;
@@ -864,7 +871,7 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 150px;
+    max-width: 220px;
   }
   .stepByStep__illustation > picture > img {
     width: 100%;
