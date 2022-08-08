@@ -306,6 +306,7 @@ table {
   border: 1px solid #2D2A26;
   z-index: 1;
   background: #ECB3CB;
+  border-right: none;
   border-radius: 0 10px 10px 0;
 }
 .inputWithButtonSmall > input[type=submit]:focus {
@@ -488,6 +489,9 @@ body {
   .header__navigation {
     height: auto;
   }
+  .header__buttonsContainer {
+    margin: 0;
+  }
   .header__links {
     flex-direction: column;
     width: 80%;
@@ -562,7 +566,7 @@ body {
 }
 @media screen and (max-width: 580px) {
   .intro {
-    height: 1000px;
+    height: 930px;
   }
   .intro__container {
     align-items: flex-start;
@@ -582,7 +586,7 @@ body {
   }
   .intro__text {
     font-size: 44px;
-    width: 70%;
+    width: 85%;
     text-align: center;
     margin-top: 50px;
   }
@@ -640,7 +644,7 @@ body {
     margin: 0;
   }
   .partners__logos > li {
-    width: 50%;
+    width: 45%;
   }
 }
 .ourMission {
@@ -723,7 +727,7 @@ body {
     width: 100%;
   }
   .ourMission__content {
-    width: 80%;
+    width: 85%;
     order: 1;
   }
 }
@@ -854,12 +858,13 @@ body {
     padding: 60px 20px;
   }
   .stepByStep__content {
-    width: 80%;
+    width: 85%;
   }
   .stepByStep__illustation {
     display: flex;
     align-items: center;
-    width: 270px;
+    width: 100%;
+    max-width: 220px;
   }
   .stepByStep__illustation > picture > img {
     width: 100%;
@@ -1019,6 +1024,9 @@ body {
 @media screen and (max-width: 580px) {
   .boxes__box {
     width: 100%;
+  }
+  .boxes__text {
+    width: 85%;
   }
 }
 .socials {

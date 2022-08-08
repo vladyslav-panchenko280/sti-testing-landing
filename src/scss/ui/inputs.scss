@@ -66,6 +66,7 @@
           border: $mainBorder;
           z-index: 1;
           background: $mainPinky;
+          border-right: none;
           border-radius: 0 10px 10px 0;
 
           &:focus {

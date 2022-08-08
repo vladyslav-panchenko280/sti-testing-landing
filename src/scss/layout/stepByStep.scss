@@ -120,24 +120,26 @@
           height: 100%;
 
           &__steps {
-               & > li {
+               &>li {
                     height: 100%;
                }
           }
+
           &__container {
                flex-direction: column;
                padding: 60px 20px;
           }
 
           &__content {
-               width: 80%;
+               width: 85%;
           }
 
 
           &__illustation {
                display: flex;
                align-items: center;
-               width: 270px;
+               width: 100%;
+               max-width: 220px;
 
                &>picture>img {
                     width: 100%;

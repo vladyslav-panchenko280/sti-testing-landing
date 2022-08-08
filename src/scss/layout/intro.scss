@@ -59,7 +59,7 @@
 
 @media screen and (max-width: $breakpoint-xs) {
      .intro {
-          height: 1000px;
+          height: 930px;
 
           &__container {
                align-items: flex-start;
@@ -79,7 +79,7 @@
 
           &__text {
                font-size: 44px;
-               width: 70%;
+               width: 85%;
                text-align: center;
                margin-top: 50px;
           }
