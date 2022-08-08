@@ -864,7 +864,7 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 220px;
+    max-width: 150px;
   }
   .stepByStep__illustation > picture > img {
     width: 100%;
