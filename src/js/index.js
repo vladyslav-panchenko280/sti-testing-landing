@@ -112,3 +112,4 @@ exitIcon.addEventListener('click', closeMobileMenu);
 window.addEventListener('resize', toggleElementsHeader);
 window.addEventListener('resize', toggleElementsFooter);
 
+
