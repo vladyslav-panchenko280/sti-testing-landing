@@ -15,5 +15,5 @@ Used technologies:
 - JavaScript(ES6+)
 - HTML5
 - SCSS
-
+- Gulp
 
